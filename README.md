@@ -50,11 +50,28 @@ The deterministic demo chain (`tests/fixtures/btc_chain_demo.json`,
 regenerate via `tests/fixtures/generate_demo_fixture.py`) lets downstream
 work proceed without Deribit access.
 
+## Services
+
+```bash
+# API (demo mode serves the deterministic fixture as the stale-data fallback)
+uvicorn services.api.main:app --app-dir services/api --port 8000 \
+  --reload  # or: cd services/api && uvicorn main:app --reload
+
+# Frontend
+cd apps/web && npm install && NEXT_PUBLIC_API_BASE=http://localhost:8000 npm run dev
+
+# Worker (no-op in DEMO_MODE; live Deribit REST when DEMO_MODE=false)
+python services/worker/deribit.py
+
+# Surrogate pipeline (requires the ml extra: pip install -e .[ml])
+python ml/generate_dataset.py --n 300
+python ml/train_surrogate.py --epochs 3
+```
+
 ## Next steps (not yet implemented)
 
-- FastAPI endpoints (`/v1/quotes`, `/v1/surfaces`, `/v1/iv`,
-  `/v1/calibrations/heston`, `/v1/scenarios`, `/v1/metrics`).
-- Deribit ingestion worker + Redis caching + PostgreSQL persistence.
-- Next.js dashboard with Plotly surface/skew/term-structure views.
-- Heston surrogate dataset generation, training, and calibration benchmark.
-- Deployment (Vercel frontend + Railway/Render services).
+- Real Deribit persistence (PostgreSQL) + Redis caching in the worker.
+- Heston surrogate wired into `/v1/calibrations/heston` (artifact exists;
+  endpoint currently returns `demo_not_calibrated`).
+- Model registry / object-storage URIs for artifacts.
+- Managed deployment (Vercel frontend + Railway/Render services).
