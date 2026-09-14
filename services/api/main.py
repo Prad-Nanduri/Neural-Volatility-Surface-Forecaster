@@ -18,12 +18,22 @@ from typing import Any
 
 import numpy as np
 from fastapi import APIRouter, FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field, field_validator
 
 from quant.black_scholes import implied_vol
 from quant.surface import build_surface
 
 app = FastAPI(title="Volterra API", version="1.0.0")
+
+# The demo frontend is served from a different origin (Vercel/localhost);
+# allow cross-origin GETs so the deployed UI can fetch surfaces.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=os.getenv("CORS_ORIGINS", "*").split(","),
+    allow_methods=["GET", "POST"],
+    allow_headers=["*"],
+)
 router = APIRouter(prefix="/v1")
 MODEL_VERSION = os.getenv("MODEL_VERSION", "demo")
 
