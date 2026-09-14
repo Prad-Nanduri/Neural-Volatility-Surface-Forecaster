@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "volterra"
+version = "0.1.0"
+description = "Volterra — Neural Volatility Surface Lab"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.12",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+packages = ["quant"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+src = ["src", "tests", "ml"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP", "B"]

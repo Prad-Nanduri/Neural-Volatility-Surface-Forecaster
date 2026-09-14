@@ -1,0 +1,1510 @@
+{
+  "underlying": "BTC",
+  "source": "synthetic-demo",
+  "observed_at": "2026-09-14T00:00:00Z",
+  "spot": 65000.0,
+  "rate": 0.03,
+  "dividend_yield": 0.0,
+  "quotes": [
+    {
+      "instrument": "BTC-7D-48780-C",
+      "expiry_years": 0.019178082191780823,
+      "strike": 48780.0,
+      "option_type": "call",
+      "bid": 16204.61527747,
+      "ask": 16302.13552989,
+      "mark": 16253.37540368,
+      "implied_vol": 0.755716
+    },
+    {
+      "instrument": "BTC-7D-48780-P",
+      "expiry_years": 0.019178082191780823,
+      "strike": 48780.0,
+      "option_type": "put",
+      "bid": 4.8182702,
+      "ask": 5.8182702,
+      "mark": 5.3182702,
+      "implied_vol": 0.755716
+    },
+    {
+      "instrument": "BTC-7D-52030-C",
+      "expiry_years": 0.019178082191780823,
+      "strike": 52030.0,
+      "option_type": "call",
+      "bid": 12980.92617761,
+      "ask": 13059.04609442,
+      "mark": 13019.98613602,
+      "implied_vol": 0.698028
+    },
+    {
+      "instrument": "BTC-7D-52030-P",
+      "expiry_years": 0.019178082191780823,
+      "strike": 52030.0,
+      "option_type": "put",
+      "bid": 19.55967733,
+      "ask": 20.55967733,
+      "mark": 20.05967733,
+      "implied_vol": 0.698028
+    },
+    {
+      "instrument": "BTC-7D-55280-C",
+      "expiry_years": 0.019178082191780823,
+      "strike": 55280.0,
+      "option_type": "call",
+      "bid": 9792.73336482,
+      "ask": 9851.66656461,
+      "mark": 9822.19996471,
+      "implied_vol": 0.641445
+    },
+    {
+      "instrument": "BTC-7D-55280-P",
+      "expiry_years": 0.019178082191780823,
+      "strike": 55280.0,
+      "option_type": "put",
+      "bid": 69.90418081,
+      "ask": 70.90418081,
+      "mark": 70.40418081,
+      "implied_vol": 0.641445
+    },
+    {
+      "instrument": "BTC-7D-58530-C",
+      "expiry_years": 0.019178082191780823,
+      "strike": 58530.0,
+      "option_type": "call",
+      "bid": 6713.05890869,
+      "ask": 6753.4584608,
+      "mark": 6733.25868474,
+      "implied_vol": 0.586991
+    },
+    {
+      "instrument": "BTC-7D-58530-P",
+      "expiry_years": 0.019178082191780823,
+      "strike": 58530.0,
+      "option_type": "put",
+      "bid": 228.90479491,
+      "ask": 230.28235636,
+      "mark": 229.59357564,
+      "implied_vol": 0.586991
+    },
+    {
+      "instrument": "BTC-7D-60160-C",
+      "expiry_years": 0.019178082191780823,
+      "strike": 60160.0,
+      "option_type": "call",
+      "bid": 5260.91314644,
+      "ask": 5292.5736067,
+      "mark": 5276.74337657,
+      "implied_vol": 0.561147
+    },
+    {
+      "instrument": "BTC-7D-60160-P",
+      "expiry_years": 0.019178082191780823,
+      "strike": 60160.0,
+      "option_type": "put",
+      "bid": 400.93430679,
+      "ask": 403.34715116,
+      "mark": 402.14072897,
+      "implied_vol": 0.561147
+    },
+    {
+      "instrument": "BTC-7D-61790-C",
+      "expiry_years": 0.019178082191780823,
+      "strike": 61790.0,
+      "option_type": "call",
+      "bid": 3919.21336634,
+      "ask": 3942.79940466,
+      "mark": 3931.0063855,
+      "implied_vol": 0.536871
+    },
+    {
+      "instrument": "BTC-7D-61790-P",
+      "expiry_years": 0.019178082191780823,
+      "strike": 61790.0,
+      "option_type": "put",
+      "bid": 683.40980081,
+      "ask": 687.52259801,
+      "mark": 685.46619941,
+      "implied_vol": 0.536871
+    },
+    {
+      "instrument": "BTC-7D-63410-C",
+      "expiry_years": 0.019178082191780823,
+      "strike": 63410.0,
+      "option_type": "call",
+      "bid": 2744.53670324,
+      "ask": 2761.05347377,
+      "mark": 2752.79508851,
+      "implied_vol": 0.514901
+    },
+    {
+      "instrument": "BTC-7D-63410-P",
+      "expiry_years": 0.019178082191780823,
+      "strike": 63410.0,
+      "option_type": "put",
+      "bid": 1122.94414635,
+      "ask": 1129.70208504,
+      "mark": 1126.3231157,
+      "implied_vol": 0.514901
+    },
+    {
+      "instrument": "BTC-7D-65040-C",
+      "expiry_years": 0.019178082191780823,
+      "strike": 65040.0,
+      "option_type": "call",
+      "bid": 1773.03302806,
+      "ask": 1783.70323685,
+      "mark": 1778.36813245,
+      "implied_vol": 0.495665
+    },
+    {
+      "instrument": "BTC-7D-65040-P",
+      "expiry_years": 0.019178082191780823,
+      "strike": 65040.0,
+      "option_type": "put",
+      "bid": 1775.61574529,
+      "ask": 1786.30149702,
+      "mark": 1780.95862115,
+      "implied_vol": 0.495665
+    },
+    {
+      "instrument": "BTC-7D-66660-C",
+      "expiry_years": 0.019178082191780823,
+      "strike": 66660.0,
+      "option_type": "call",
+      "bid": 1049.6751541,
+      "ask": 1055.99215603,
+      "mark": 1052.83365507,
+      "implied_vol": 0.480078
+    },
+    {
+      "instrument": "BTC-7D-66660-P",
+      "expiry_years": 0.019178082191780823,
+      "strike": 66660.0,
+      "option_type": "put",
+      "bid": 2666.46887997,
+      "ask": 2682.51583412,
+      "mark": 2674.49235705,
+      "implied_vol": 0.480078
+    },
+    {
+      "instrument": "BTC-7D-68290-C",
+      "expiry_years": 0.019178082191780823,
+      "strike": 68290.0,
+      "option_type": "call",
+      "bid": 562.69173603,
+      "ask": 566.07804537,
+      "mark": 564.3848907,
+      "implied_vol": 0.468447
+    },
+    {
+      "instrument": "BTC-7D-68290-P",
+      "expiry_years": 0.019178082191780823,
+      "strike": 68290.0,
+      "option_type": "put",
+      "bid": 3803.66073603,
+      "ask": 3826.55137235,
+      "mark": 3815.10605419,
+      "implied_vol": 0.468447
+    },
+    {
+      "instrument": "BTC-7D-71540-C",
+      "expiry_years": 0.019178082191780823,
+      "strike": 71540.0,
+      "option_type": "call",
+      "bid": 125.04375901,
+      "ask": 126.04375901,
+      "mark": 125.54375901,
+      "implied_vol": 0.45765
+    },
+    {
+      "instrument": "BTC-7D-71540-P",
+      "expiry_years": 0.019178082191780823,
+      "strike": 71540.0,
+      "option_type": "put",
+      "bid": 6604.5224105,
+      "ask": 6644.26878408,
+      "mark": 6624.39559729,
+      "implied_vol": 0.45765
+    },
+    {
+      "instrument": "BTC-7D-74790-C",
+      "expiry_years": 0.019178082191780823,
+      "strike": 74790.0,
+      "option_type": "call",
+      "bid": 21.79534818,
+      "ask": 22.79534818,
+      "mark": 22.29534818,
+      "implied_vol": 0.460542
+    },
+    {
+      "instrument": "BTC-7D-74790-P",
+      "expiry_years": 0.019178082191780823,
+      "strike": 74790.0,
+      "option_type": "put",
+      "bid": 9739.97002766,
+      "ask": 9798.58569483,
+      "mark": 9769.27786124,
+      "implied_vol": 0.460542
+    },
+    {
+      "instrument": "BTC-7D-78040-C",
+      "expiry_years": 0.019178082191780823,
+      "strike": 78040.0,
+      "option_type": "call",
+      "bid": 3.18732108,
+      "ask": 4.18732108,
+      "mark": 3.68732108,
+      "implied_vol": 0.472068
+    },
+    {
+      "instrument": "BTC-7D-78040-P",
+      "expiry_years": 0.019178082191780823,
+      "strike": 78040.0,
+      "option_type": "put",
+      "bid": 12959.80410741,
+      "ask": 13037.79691046,
+      "mark": 12998.80050894,
+      "implied_vol": 0.472068
+    },
+    {
+      "instrument": "BTC-7D-81300-C",
+      "expiry_years": 0.019178082191780823,
+      "strike": 81300.0,
+      "option_type": "call",
+      "bid": 0.1214928,
+      "ask": 1.1214928,
+      "mark": 0.6214928,
+      "implied_vol": 0.488151
+    },
+    {
+      "instrument": "BTC-7D-81300-P",
+      "expiry_years": 0.019178082191780823,
+      "strike": 81300.0,
+      "option_type": "put",
+      "bid": 16205.09802487,
+      "ask": 16302.62118249,
+      "mark": 16253.85960368,
+      "implied_vol": 0.488151
+    },
+    {
+      "instrument": "BTC-7D-87800-C",
+      "expiry_years": 0.019178082191780823,
+      "strike": 87800.0,
+      "option_type": "call",
+      "bid": 0.0,
+      "ask": 0.52193679,
+      "mark": 0.02193679,
+      "implied_vol": 0.524801
+    },
+    {
+      "instrument": "BTC-7D-87800-P",
+      "expiry_years": 0.019178082191780823,
+      "strike": 87800.0,
+      "option_type": "put",
+      "bid": 22681.27283305,
+      "ask": 22817.76996143,
+      "mark": 22749.52139724,
+      "implied_vol": 0.524801
+    },
+    {
+      "instrument": "BTC-30D-48870-C",
+      "expiry_years": 0.0821917808219178,
+      "strike": 48870.0,
+      "option_type": "call",
+      "bid": 16248.56913623,
+      "ask": 16346.35390536,
+      "mark": 16297.46152079,
+      "implied_vol": 0.473996
+    },
+    {
+      "instrument": "BTC-30D-48870-P",
+      "expiry_years": 0.0821917808219178,
+      "strike": 48870.0,
+      "option_type": "put",
+      "bid": 46.60859223,
+      "ask": 47.60859223,
+      "mark": 47.10859223,
+      "implied_vol": 0.473996
+    },
+    {
+      "instrument": "BTC-30D-52130-C",
+      "expiry_years": 0.0821917808219178,
+      "strike": 52130.0,
+      "option_type": "call",
+      "bid": 13079.28555137,
+      "ask": 13157.99740023,
+      "mark": 13118.6414758,
+      "implied_vol": 0.445094
+    },
+    {
+      "instrument": "BTC-30D-52130-P",
+      "expiry_years": 0.0821917808219178,
+      "strike": 52130.0,
+      "option_type": "put",
+      "bid": 119.76009324,
+      "ask": 120.76009324,
+      "mark": 120.26009324,
+      "implied_vol": 0.445094
+    },
+    {
+      "instrument": "BTC-30D-55390-C",
+      "expiry_years": 0.0821917808219178,
+      "strike": 55390.0,
+      "option_type": "call",
+      "bid": 10006.04147623,
+      "ask": 10066.25837579,
+      "mark": 10036.14992601,
+      "implied_vol": 0.417981
+    },
+    {
+      "instrument": "BTC-30D-55390-P",
+      "expiry_years": 0.0821917808219178,
+      "strike": 55390.0,
+      "option_type": "put",
+      "bid": 288.87086918,
+      "ask": 290.60930971,
+      "mark": 289.74008944,
+      "implied_vol": 0.417981
+    },
+    {
+      "instrument": "BTC-30D-58640-C",
+      "expiry_years": 0.0821917808219178,
+      "strike": 58640.0,
+      "option_type": "call",
+      "bid": 7137.75878033,
+      "ask": 7180.71419927,
+      "mark": 7159.2364898,
+      "implied_vol": 0.393513
+    },
+    {
+      "instrument": "BTC-30D-58640-P",
+      "expiry_years": 0.0821917808219178,
+      "strike": 58640.0,
+      "option_type": "put",
+      "bid": 652.85835791,
+      "ask": 656.78729487,
+      "mark": 654.82282639,
+      "implied_vol": 0.393513
+    },
+    {
+      "instrument": "BTC-30D-60270-C",
+      "expiry_years": 0.0821917808219178,
+      "strike": 60270.0,
+      "option_type": "call",
+      "bid": 5821.00969862,
+      "ask": 5856.04085026,
+      "mark": 5838.52527444,
+      "implied_vol": 0.382559
+    },
+    {
+      "instrument": "BTC-30D-60270-P",
+      "expiry_years": 0.0821917808219178,
+      "strike": 60270.0,
+      "option_type": "put",
+      "bid": 957.21709188,
+      "ask": 962.97767618,
+      "mark": 960.09738403,
+      "implied_vol": 0.382559
+    },
+    {
+      "instrument": "BTC-30D-61900-C",
+      "expiry_years": 0.0821917808219178,
+      "strike": 61900.0,
+      "option_type": "call",
+      "bid": 4617.95846771,
+      "ask": 4645.74959189,
+      "mark": 4631.8540298,
+      "implied_vol": 0.372719
+    },
+    {
+      "instrument": "BTC-30D-61900-P",
+      "expiry_years": 0.0821917808219178,
+      "strike": 61900.0,
+      "option_type": "put",
+      "bid": 1375.27367665,
+      "ask": 1383.55014812,
+      "mark": 1379.41191239,
+      "implied_vol": 0.372719
+    },
+    {
+      "instrument": "BTC-30D-63530-C",
+      "expiry_years": 0.0821917808219178,
+      "strike": 63530.0,
+      "option_type": "call",
+      "bid": 3553.02625444,
+      "ask": 3574.40855888,
+      "mark": 3563.71740666,
+      "implied_vol": 0.364168
+    },
+    {
+      "instrument": "BTC-30D-63530-P",
+      "expiry_years": 0.0821917808219178,
+      "strike": 63530.0,
+      "option_type": "put",
+      "bid": 1931.44927906,
+      "ask": 1943.07284543,
+      "mark": 1937.26106225,
+      "implied_vol": 0.364168
+    },
+    {
+      "instrument": "BTC-30D-65160-C",
+      "expiry_years": 0.0821917808219178,
+      "strike": 65160.0,
+      "option_type": "call",
+      "bid": 2645.6014741,
+      "ask": 2661.52284706,
+      "mark": 2653.56216058,
+      "implied_vol": 0.357063
+    },
+    {
+      "instrument": "BTC-30D-65160-P",
+      "expiry_years": 0.0821917808219178,
+      "strike": 65160.0,
+      "option_type": "put",
+      "bid": 2645.13231439,
+      "ask": 2661.05086393,
+      "mark": 2653.09158916,
+      "implied_vol": 0.357063
+    },
+    {
+      "instrument": "BTC-30D-66790-C",
+      "expiry_years": 0.0821917808219178,
+      "strike": 66790.0,
+      "option_type": "call",
+      "bid": 1905.21689263,
+      "ask": 1916.68259108,
+      "mark": 1910.94974185,
+      "implied_vol": 0.351504
+    },
+    {
+      "instrument": "BTC-30D-66790-P",
+      "expiry_years": 0.0821917808219178,
+      "strike": 66790.0,
+      "option_type": "put",
+      "bid": 3525.8555486,
+      "ask": 3547.07433827,
+      "mark": 3536.46494344,
+      "implied_vol": 0.351504
+    },
+    {
+      "instrument": "BTC-30D-68420-C",
+      "expiry_years": 0.0821917808219178,
+      "strike": 68420.0,
+      "option_type": "call",
+      "bid": 1328.50329566,
+      "ask": 1336.49830045,
+      "mark": 1332.50079806,
+      "implied_vol": 0.347523
+    },
+    {
+      "instrument": "BTC-30D-68420-P",
+      "expiry_years": 0.0821917808219178,
+      "strike": 68420.0,
+      "option_type": "put",
+      "bid": 4570.24976732,
+      "ask": 4597.75377796,
+      "mark": 4584.00177264,
+      "implied_vol": 0.347523
+    },
+    {
+      "instrument": "BTC-30D-71680-C",
+      "expiry_years": 0.0821917808219178,
+      "strike": 71680.0,
+      "option_type": "call",
+      "bid": 594.21605824,
+      "ask": 597.79208267,
+      "mark": 596.00407046,
+      "implied_vol": 0.34402
+    },
+    {
+      "instrument": "BTC-30D-71680-P",
+      "expiry_years": 0.0821917808219178,
+      "strike": 71680.0,
+      "option_type": "put",
+      "bid": 7078.17816126,
+      "ask": 7120.77502081,
+      "mark": 7099.47659103,
+      "implied_vol": 0.34402
+    },
+    {
+      "instrument": "BTC-30D-74930-C",
+      "expiry_years": 0.0821917808219178,
+      "strike": 74930.0,
+      "option_type": "call",
+      "bid": 246.24483818,
+      "ask": 247.72675295,
+      "mark": 246.98579557,
+      "implied_vol": 0.345423
+    },
+    {
+      "instrument": "BTC-30D-74930-P",
+      "expiry_years": 0.0821917808219178,
+      "strike": 74930.0,
+      "option_type": "put",
+      "bid": 9962.47712583,
+      "ask": 10022.43185277,
+      "mark": 9992.4544893,
+      "implied_vol": 0.345423
+    },
+    {
+      "instrument": "BTC-30D-78190-C",
+      "expiry_years": 0.0821917808219178,
+      "strike": 78190.0,
+      "option_type": "call",
+      "bid": 97.58817183,
+      "ask": 98.58817183,
+      "mark": 98.08817183,
+      "implied_vol": 0.350251
+    },
+    {
+      "instrument": "BTC-30D-78190-P",
+      "expiry_years": 0.0821917808219178,
+      "strike": 78190.0,
+      "option_type": "put",
+      "bid": 13056.24182633,
+      "ask": 13134.8149968,
+      "mark": 13095.52841156,
+      "implied_vol": 0.350251
+    },
+    {
+      "instrument": "BTC-30D-81450-C",
+      "expiry_years": 0.0821917808219178,
+      "strike": 81450.0,
+      "option_type": "call",
+      "bid": 38.07006987,
+      "ask": 39.07006987,
+      "mark": 38.57006987,
+      "implied_vol": 0.357203
+    },
+    {
+      "instrument": "BTC-30D-81450-P",
+      "expiry_years": 0.0821917808219178,
+      "strike": 81450.0,
+      "option_type": "put",
+      "bid": 16239.11791003,
+      "ask": 16336.84580116,
+      "mark": 16287.9818556,
+      "implied_vol": 0.357203
+    },
+    {
+      "instrument": "BTC-30D-87970-C",
+      "expiry_years": 0.0821917808219178,
+      "strike": 87970.0,
+      "option_type": "call",
+      "bid": 5.68840079,
+      "ask": 6.68840079,
+      "mark": 6.18840079,
+      "implied_vol": 0.374101
+    },
+    {
+      "instrument": "BTC-30D-87970-P",
+      "expiry_years": 0.0821917808219178,
+      "strike": 87970.0,
+      "option_type": "put",
+      "bid": 22691.26464867,
+      "ask": 22827.82190835,
+      "mark": 22759.54327851,
+      "implied_vol": 0.374101
+    },
+    {
+      "instrument": "BTC-60D-48990-C",
+      "expiry_years": 0.1643835616438356,
+      "strike": 48990.0,
+      "option_type": "call",
+      "bid": 16340.03382108,
+      "ask": 16438.36902963,
+      "mark": 16389.20142536,
+      "implied_vol": 0.399708
+    },
+    {
+      "instrument": "BTC-60D-48990-P",
+      "expiry_years": 0.1643835616438356,
+      "strike": 48990.0,
+      "option_type": "put",
+      "bid": 137.70163928,
+      "ask": 138.70163928,
+      "mark": 138.20163928,
+      "implied_vol": 0.399708
+    },
+    {
+      "instrument": "BTC-60D-52260-C",
+      "expiry_years": 0.1643835616438356,
+      "strike": 52260.0,
+      "option_type": "call",
+      "bid": 13256.94660233,
+      "ask": 13336.72762501,
+      "mark": 13296.83711367,
+      "implied_vol": 0.381552
+    },
+    {
+      "instrument": "BTC-60D-52260-P",
+      "expiry_years": 0.1643835616438356,
+      "strike": 52260.0,
+      "option_type": "put",
+      "bid": 298.85174472,
+      "ask": 300.65025071,
+      "mark": 299.75099771,
+      "implied_vol": 0.381552
+    },
+    {
+      "instrument": "BTC-60D-55520-C",
+      "expiry_years": 0.1643835616438356,
+      "strike": 55520.0,
+      "option_type": "call",
+      "bid": 10332.59415193,
+      "ask": 10394.77626318,
+      "mark": 10363.68520755,
+      "implied_vol": 0.365269
+    },
+    {
+      "instrument": "BTC-60D-55520-P",
+      "expiry_years": 0.1643835616438356,
+      "strike": 55520.0,
+      "option_type": "put",
+      "bid": 608.73026953,
+      "ask": 612.39364126,
+      "mark": 610.5619554,
+      "implied_vol": 0.365269
+    },
+    {
+      "instrument": "BTC-60D-58790-C",
+      "expiry_years": 0.1643835616438356,
+      "strike": 58790.0,
+      "option_type": "call",
+      "bid": 7646.6353179,
+      "ask": 7692.6531834,
+      "mark": 7669.64425065,
+      "implied_vol": 0.35121
+    },
+    {
+      "instrument": "BTC-60D-58790-P",
+      "expiry_years": 0.1643835616438356,
+      "strike": 58790.0,
+      "option_type": "put",
+      "bid": 1166.92336461,
+      "ask": 1173.94597263,
+      "mark": 1170.43466862,
+      "implied_vol": 0.35121
+    },
+    {
+      "instrument": "BTC-60D-60420-C",
+      "expiry_years": 0.1643835616438356,
+      "strike": 60420.0,
+      "option_type": "call",
+      "bid": 6436.86235167,
+      "ask": 6475.59973794,
+      "mark": 6456.2310448,
+      "implied_vol": 0.345213
+    },
+    {
+      "instrument": "BTC-60D-60420-P",
+      "expiry_years": 0.1643835616438356,
+      "strike": 60420.0,
+      "option_type": "put",
+      "bid": 1574.26588599,
+      "ask": 1583.73990336,
+      "mark": 1579.00289467,
+      "implied_vol": 0.345213
+    },
+    {
+      "instrument": "BTC-60D-62060-C",
+      "expiry_years": 0.1643835616438356,
+      "strike": 62060.0,
+      "option_type": "call",
+      "bid": 5325.90186644,
+      "ask": 5357.95343234,
+      "mark": 5341.92764939,
+      "implied_vol": 0.33994
+    },
+    {
+      "instrument": "BTC-60D-62060-P",
+      "expiry_years": 0.1643835616438356,
+      "strike": 62060.0,
+      "option_type": "put",
+      "bid": 2090.34184228,
+      "ask": 2102.9216327,
+      "mark": 2096.63173749,
+      "implied_vol": 0.33994
+    },
+    {
+      "instrument": "BTC-60D-63690-C",
+      "expiry_years": 0.1643835616438356,
+      "strike": 63690.0,
+      "option_type": "call",
+      "bid": 4339.10841377,
+      "ask": 4365.22140322,
+      "mark": 4352.16490849,
+      "implied_vol": 0.335502
+    },
+    {
+      "instrument": "BTC-60D-63690-P",
+      "expiry_years": 0.1643835616438356,
+      "strike": 63690.0,
+      "option_type": "put",
+      "bid": 2720.6638772,
+      "ask": 2737.03697978,
+      "mark": 2728.85042849,
+      "implied_vol": 0.335502
+    },
+    {
+      "instrument": "BTC-60D-65320-C",
+      "expiry_years": 0.1643835616438356,
+      "strike": 65320.0,
+      "option_type": "call",
+      "bid": 3476.91098512,
+      "ask": 3497.83522375,
+      "mark": 3487.37310443,
+      "implied_vol": 0.33189
+    },
+    {
+      "instrument": "BTC-60D-65320-P",
+      "expiry_years": 0.1643835616438356,
+      "strike": 65320.0,
+      "option_type": "put",
+      "bid": 3475.58193616,
+      "ask": 3496.4981765,
+      "mark": 3486.04005633,
+      "implied_vol": 0.33189
+    },
+    {
+      "instrument": "BTC-60D-66950-C",
+      "expiry_years": 0.1643835616438356,
+      "strike": 66950.0,
+      "option_type": "call",
+      "bid": 2741.44230482,
+      "ask": 2757.94045309,
+      "mark": 2749.69137895,
+      "implied_vol": 0.329108
+    },
+    {
+      "instrument": "BTC-60D-66950-P",
+      "expiry_years": 0.1643835616438356,
+      "strike": 66950.0,
+      "option_type": "put",
+      "bid": 4357.22874346,
+      "ask": 4383.45078203,
+      "mark": 4370.33976275,
+      "implied_vol": 0.329108
+    },
+    {
+      "instrument": "BTC-60D-68590-C",
+      "expiry_years": 0.1643835616438356,
+      "strike": 68590.0,
+      "option_type": "call",
+      "bid": 2125.66376346,
+      "ask": 2138.45612312,
+      "mark": 2132.05994329,
+      "implied_vol": 0.32712
+    },
+    {
+      "instrument": "BTC-60D-68590-P",
+      "expiry_years": 0.1643835616438356,
+      "strike": 68590.0,
+      "option_type": "put",
+      "bid": 5368.48664362,
+      "ask": 5400.79448701,
+      "mark": 5384.64056531,
+      "implied_vol": 0.32712
+    },
+    {
+      "instrument": "BTC-60D-71850-C",
+      "expiry_years": 0.1643835616438356,
+      "strike": 71850.0,
+      "option_type": "call",
+      "bid": 1232.30146622,
+      "ask": 1239.71752319,
+      "mark": 1236.0094947,
+      "implied_vol": 0.32538
+    },
+    {
+      "instrument": "BTC-60D-71850-P",
+      "expiry_years": 0.1643835616438356,
+      "strike": 71850.0,
+      "option_type": "put",
+      "bid": 7709.35532158,
+      "ask": 7755.75063946,
+      "mark": 7732.55298052,
+      "implied_vol": 0.32538
+    },
+    {
+      "instrument": "BTC-60D-75120-C",
+      "expiry_years": 0.1643835616438356,
+      "strike": 75120.0,
+      "option_type": "call",
+      "bid": 684.83198704,
+      "ask": 688.95334303,
+      "mark": 686.89266504,
+      "implied_vol": 0.326098
+    },
+    {
+      "instrument": "BTC-60D-75120-P",
+      "expiry_years": 0.1643835616438356,
+      "strike": 75120.0,
+      "option_type": "put",
+      "bid": 10406.03777152,
+      "ask": 10468.66187045,
+      "mark": 10437.34982098,
+      "implied_vol": 0.326098
+    },
+    {
+      "instrument": "BTC-60D-78390-C",
+      "expiry_years": 0.1643835616438356,
+      "strike": 78390.0,
+      "option_type": "call",
+      "bid": 370.84910017,
+      "ask": 373.08089014,
+      "mark": 371.96499515,
+      "implied_vol": 0.328638
+    },
+    {
+      "instrument": "BTC-60D-78390-P",
+      "expiry_years": 0.1643835616438356,
+      "strike": 78390.0,
+      "option_type": "put",
+      "bid": 13336.20681376,
+      "ask": 13416.46482869,
+      "mark": 13376.33582122,
+      "implied_vol": 0.328638
+    },
+    {
+      "instrument": "BTC-60D-81650-C",
+      "expiry_years": 0.1643835616438356,
+      "strike": 81650.0,
+      "option_type": "call",
+      "bid": 198.52431343,
+      "ask": 199.7190435,
+      "mark": 199.12167846,
+      "implied_vol": 0.332413
+    },
+    {
+      "instrument": "BTC-60D-81650-P",
+      "expiry_years": 0.1643835616438356,
+      "strike": 81650.0,
+      "option_type": "put",
+      "bid": 16398.11300223,
+      "ask": 16496.79773444,
+      "mark": 16447.45536833,
+      "implied_vol": 0.332413
+    },
+    {
+      "instrument": "BTC-60D-88180-C",
+      "expiry_years": 0.1643835616438356,
+      "strike": 88180.0,
+      "option_type": "call",
+      "bid": 56.12934918,
+      "ask": 57.12934918,
+      "mark": 56.62934918,
+      "implied_vol": 0.342061
+    },
+    {
+      "instrument": "BTC-60D-88180-P",
+      "expiry_years": 0.1643835616438356,
+      "strike": 88180.0,
+      "option_type": "put",
+      "bid": 22734.43105425,
+      "ask": 22871.24809169,
+      "mark": 22802.83957297,
+      "implied_vol": 0.342061
+    },
+    {
+      "instrument": "BTC-90D-49110-C",
+      "expiry_years": 0.2465753424657534,
+      "strike": 49110.0,
+      "option_type": "call",
+      "bid": 16471.06180385,
+      "ask": 16570.18554589,
+      "mark": 16520.62367487,
+      "implied_vol": 0.372792
+    },
+    {
+      "instrument": "BTC-90D-49110-P",
+      "expiry_years": 0.2465753424657534,
+      "strike": 49110.0,
+      "option_type": "put",
+      "bid": 267.87849853,
+      "ask": 269.49060584,
+      "mark": 268.68455219,
+      "implied_vol": 0.372792
+    },
+    {
+      "instrument": "BTC-90D-52390-C",
+      "expiry_years": 0.2465753424657534,
+      "strike": 52390.0,
+      "option_type": "call",
+      "bid": 13479.8428667,
+      "ask": 13560.96529117,
+      "mark": 13520.40407893,
+      "implied_vol": 0.359543
+    },
+    {
+      "instrument": "BTC-90D-52390-P",
+      "expiry_years": 0.2465753424657534,
+      "strike": 52390.0,
+      "option_type": "put",
+      "bid": 522.71858721,
+      "ask": 525.86433598,
+      "mark": 524.2914616,
+      "implied_vol": 0.359543
+    },
+    {
+      "instrument": "BTC-90D-55660-C",
+      "expiry_years": 0.2465753424657534,
+      "strike": 55660.0,
+      "option_type": "call",
+      "bid": 10681.35450265,
+      "ask": 10745.63547258,
+      "mark": 10713.49498761,
+      "implied_vol": 0.348061
+    },
+    {
+      "instrument": "BTC-90D-55660-P",
+      "expiry_years": 0.2465753424657534,
+      "strike": 55660.0,
+      "option_type": "put",
+      "bid": 960.39272758,
+      "ask": 966.17242303,
+      "mark": 963.2825753,
+      "implied_vol": 0.348061
+    },
+    {
+      "instrument": "BTC-90D-58930-C",
+      "expiry_years": 0.2465753424657534,
+      "strike": 58930.0,
+      "option_type": "call",
+      "bid": 8149.05355109,
+      "ask": 8198.09499673,
+      "mark": 8173.57427391,
+      "implied_vol": 0.338547
+    },
+    {
+      "instrument": "BTC-90D-58930-P",
+      "expiry_years": 0.2465753424657534,
+      "strike": 58930.0,
+      "option_type": "put",
+      "bid": 1664.25428043,
+      "ask": 1674.26985283,
+      "mark": 1669.26206663,
+      "implied_vol": 0.338547
+    },
+    {
+      "instrument": "BTC-90D-60570-C",
+      "expiry_years": 0.2465753424657534,
+      "strike": 60570.0,
+      "option_type": "call",
+      "bid": 7005.82392555,
+      "ask": 7047.98535339,
+      "mark": 7026.90463947,
+      "implied_vol": 0.334587
+    },
+    {
+      "instrument": "BTC-90D-60570-P",
+      "expiry_years": 0.2465753424657534,
+      "strike": 60570.0,
+      "option_type": "put",
+      "bid": 2144.05416781,
+      "ask": 2156.95720192,
+      "mark": 2150.50568486,
+      "implied_vol": 0.334587
+    },
+    {
+      "instrument": "BTC-90D-62210-C",
+      "expiry_years": 0.2465753424657534,
+      "strike": 62210.0,
+      "option_type": "call",
+      "bid": 5959.37805746,
+      "ask": 5995.24191739,
+      "mark": 5977.30998742,
+      "implied_vol": 0.331194
+    },
+    {
+      "instrument": "BTC-90D-62210-P",
+      "expiry_years": 0.2465753424657534,
+      "strike": 62210.0,
+      "option_type": "put",
+      "bid": 2720.63781263,
+      "ask": 2737.01075834,
+      "mark": 2728.82428549,
+      "implied_vol": 0.331194
+    },
+    {
+      "instrument": "BTC-90D-63850-C",
+      "expiry_years": 0.2465753424657534,
+      "strike": 63850.0,
+      "option_type": "call",
+      "bid": 5015.96927883,
+      "ask": 5046.15565363,
+      "mark": 5031.06246623,
+      "implied_vol": 0.328375
+    },
+    {
+      "instrument": "BTC-90D-63850-P",
+      "expiry_years": 0.2465753424657534,
+      "strike": 63850.0,
+      "option_type": "put",
+      "bid": 3400.25854691,
+      "ask": 3420.72148702,
+      "mark": 3410.49001696,
+      "implied_vol": 0.328375
+    },
+    {
+      "instrument": "BTC-90D-65480-C",
+      "expiry_years": 0.2465753424657534,
+      "strike": 65480.0,
+      "option_type": "call",
+      "bid": 4183.54900127,
+      "ask": 4208.72582575,
+      "mark": 4196.13741351,
+      "implied_vol": 0.326137
+    },
+    {
+      "instrument": "BTC-90D-65480-P",
+      "expiry_years": 0.2465753424657534,
+      "strike": 65480.0,
+      "option_type": "put",
+      "bid": 4180.97126085,
+      "ask": 4206.13257235,
+      "mark": 4193.5519166,
+      "implied_vol": 0.326137
+    },
+    {
+      "instrument": "BTC-90D-67120-C",
+      "expiry_years": 0.2465753424657534,
+      "strike": 67120.0,
+      "option_type": "call",
+      "bid": 3451.68143559,
+      "ask": 3472.45384142,
+      "mark": 3462.0676385,
+      "implied_vol": 0.324438
+    },
+    {
+      "instrument": "BTC-90D-67120-P",
+      "expiry_years": 0.2465753424657534,
+      "strike": 67120.0,
+      "option_type": "put",
+      "bid": 5072.13320808,
+      "ask": 5102.65758045,
+      "mark": 5087.39539426,
+      "implied_vol": 0.324438
+    },
+    {
+      "instrument": "BTC-90D-68760-C",
+      "expiry_years": 0.2465753424657534,
+      "strike": 68760.0,
+      "option_type": "call",
+      "bid": 2822.26704416,
+      "ask": 2839.25160009,
+      "mark": 2830.75932212,
+      "implied_vol": 0.323263
+    },
+    {
+      "instrument": "BTC-90D-68760-P",
+      "expiry_years": 0.2465753424657534,
+      "strike": 68760.0,
+      "option_type": "put",
+      "bid": 6065.74832957,
+      "ask": 6102.25233155,
+      "mark": 6084.00033056,
+      "implied_vol": 0.323263
+    },
+    {
+      "instrument": "BTC-90D-72030-C",
+      "expiry_years": 0.2465753424657534,
+      "strike": 72030.0,
+      "option_type": "call",
+      "bid": 1845.59076632,
+      "ask": 1856.69763152,
+      "mark": 1851.14419892,
+      "implied_vol": 0.322336
+    },
+    {
+      "instrument": "BTC-90D-72030-P",
+      "expiry_years": 0.2465753424657534,
+      "strike": 72030.0,
+      "option_type": "put",
+      "bid": 8325.23455615,
+      "ask": 8375.33626862,
+      "mark": 8350.28541238,
+      "implied_vol": 0.322336
+    },
+    {
+      "instrument": "BTC-90D-75300-C",
+      "expiry_years": 0.2465753424657534,
+      "strike": 75300.0,
+      "option_type": "call",
+      "bid": 1177.79670189,
+      "ask": 1184.88474624,
+      "mark": 1181.34072406,
+      "implied_vol": 0.322987
+    },
+    {
+      "instrument": "BTC-90D-75300-P",
+      "expiry_years": 0.2465753424657534,
+      "strike": 75300.0,
+      "option_type": "put",
+      "bid": 10893.60299613,
+      "ask": 10959.16128898,
+      "mark": 10926.38214255,
+      "implied_vol": 0.322987
+    },
+    {
+      "instrument": "BTC-90D-78580-C",
+      "expiry_years": 0.2465753424657534,
+      "strike": 78580.0,
+      "option_type": "call",
+      "bid": 738.2274369,
+      "ask": 742.6701296,
+      "mark": 740.44878325,
+      "implied_vol": 0.324852
+    },
+    {
+      "instrument": "BTC-90D-78580-P",
+      "expiry_years": 0.2465753424657534,
+      "strike": 78580.0,
+      "option_type": "put",
+      "bid": 13700.09275697,
+      "ask": 13782.54065721,
+      "mark": 13741.31670709,
+      "implied_vol": 0.324852
+    },
+    {
+      "instrument": "BTC-90D-81850-C",
+      "expiry_years": 0.2465753424657534,
+      "strike": 81850.0,
+      "option_type": "call",
+      "bid": 458.89980122,
+      "ask": 461.66148508,
+      "mark": 460.28064315,
+      "implied_vol": 0.327585
+    },
+    {
+      "instrument": "BTC-90D-81850-P",
+      "expiry_years": 0.2465753424657534,
+      "strike": 81850.0,
+      "option_type": "put",
+      "bid": 16656.92762569,
+      "ask": 16757.16991833,
+      "mark": 16707.04877201,
+      "implied_vol": 0.327585
+    },
+    {
+      "instrument": "BTC-90D-88400-C",
+      "expiry_years": 0.2465753424657534,
+      "strike": 88400.0,
+      "option_type": "call",
+      "bid": 175.57829835,
+      "ask": 176.63493806,
+      "mark": 176.1066182,
+      "implied_vol": 0.334662
+    },
+    {
+      "instrument": "BTC-90D-88400-P",
+      "expiry_years": 0.2465753424657534,
+      "strike": 88400.0,
+      "option_type": "put",
+      "bid": 22855.82765306,
+      "ask": 22993.37526181,
+      "mark": 22924.60145744,
+      "implied_vol": 0.334662
+    },
+    {
+      "instrument": "BTC-180D-49480-C",
+      "expiry_years": 0.4931506849315068,
+      "strike": 49480.0,
+      "option_type": "call",
+      "bid": 16872.01972929,
+      "ask": 16973.55645785,
+      "mark": 16922.78809357,
+      "implied_vol": 0.33095
+    },
+    {
+      "instrument": "BTC-180D-49480-P",
+      "expiry_years": 0.4931506849315068,
+      "strike": 49480.0,
+      "option_type": "put",
+      "bid": 674.11521781,
+      "ask": 678.1720797,
+      "mark": 676.14364876,
+      "implied_vol": 0.33095
+    },
+    {
+      "instrument": "BTC-180D-52780-C",
+      "expiry_years": 0.4931506849315068,
+      "strike": 52780.0,
+      "option_type": "call",
+      "bid": 14086.26649339,
+      "ask": 14171.0384081,
+      "mark": 14128.65245074,
+      "implied_vol": 0.323412
+    },
+    {
+      "instrument": "BTC-180D-52780-P",
+      "expiry_years": 0.4931506849315068,
+      "strike": 52780.0,
+      "option_type": "put",
+      "bid": 1130.14482573,
+      "ask": 1136.94609851,
+      "mark": 1133.54546212,
+      "implied_vol": 0.323412
+    },
+    {
+      "instrument": "BTC-180D-56070-C",
+      "expiry_years": 0.4931506849315068,
+      "strike": 56070.0,
+      "option_type": "call",
+      "bid": 11522.99422325,
+      "ask": 11592.3402266,
+      "mark": 11557.66722492,
+      "implied_vol": 0.31705
+    },
+    {
+      "instrument": "BTC-180D-56070-P",
+      "expiry_years": 0.4931506849315068,
+      "strike": 56070.0,
+      "option_type": "put",
+      "bid": 1798.83181503,
+      "ask": 1809.65728232,
+      "mark": 1804.24454868,
+      "implied_vol": 0.31705
+    },
+    {
+      "instrument": "BTC-180D-59370-C",
+      "expiry_years": 0.4931506849315068,
+      "strike": 59370.0,
+      "option_type": "call",
+      "bid": 9216.46622365,
+      "ask": 9271.93141657,
+      "mark": 9244.19882011,
+      "implied_vol": 0.311891
+    },
+    {
+      "instrument": "BTC-180D-59370-P",
+      "expiry_years": 0.4931506849315068,
+      "strike": 59370.0,
+      "option_type": "put",
+      "bid": 2734.08665925,
+      "ask": 2750.54054085,
+      "mark": 2742.31360005,
+      "implied_vol": 0.311891
+    },
+    {
+      "instrument": "BTC-180D-61020-C",
+      "expiry_years": 0.4931506849315068,
+      "strike": 61020.0,
+      "option_type": "call",
+      "bid": 8175.25937651,
+      "ask": 8224.45853023,
+      "mark": 8199.85895337,
+      "implied_vol": 0.309783
+    },
+    {
+      "instrument": "BTC-180D-61020-P",
+      "expiry_years": 0.4931506849315068,
+      "strike": 61020.0,
+      "option_type": "put",
+      "bid": 3313.77123402,
+      "ask": 3333.71368879,
+      "mark": 3323.7424614,
+      "implied_vol": 0.309783
+    },
+    {
+      "instrument": "BTC-180D-62670-C",
+      "expiry_years": 0.4931506849315068,
+      "strike": 62670.0,
+      "option_type": "call",
+      "bid": 7213.30775893,
+      "ask": 7256.71783572,
+      "mark": 7235.01279733,
+      "implied_vol": 0.30799
+    },
+    {
+      "instrument": "BTC-180D-62670-P",
+      "expiry_years": 0.4931506849315068,
+      "strike": 62670.0,
+      "option_type": "put",
+      "bid": 3972.71103835,
+      "ask": 3996.61902856,
+      "mark": 3984.66503346,
+      "implied_vol": 0.30799
+    },
+    {
+      "instrument": "BTC-180D-64320-C",
+      "expiry_years": 0.4931506849315068,
+      "strike": 64320.0,
+      "option_type": "call",
+      "bid": 6332.25316989,
+      "ask": 6370.36101244,
+      "mark": 6351.30709117,
+      "implied_vol": 0.306508
+    },
+    {
+      "instrument": "BTC-180D-64320-P",
+      "expiry_years": 0.4931506849315068,
+      "strike": 64320.0,
+      "option_type": "put",
+      "bid": 4712.54787122,
+      "ask": 4740.90823956,
+      "mark": 4726.72805539,
+      "implied_vol": 0.306508
+    },
+    {
+      "instrument": "BTC-180D-65970-C",
+      "expiry_years": 0.4931506849315068,
+      "strike": 65970.0,
+      "option_type": "call",
+      "bid": 5532.20597461,
+      "ask": 5565.49908981,
+      "mark": 5548.85253221,
+      "implied_vol": 0.305326
+    },
+    {
+      "instrument": "BTC-180D-65970-P",
+      "expiry_years": 0.4931506849315068,
+      "strike": 65970.0,
+      "option_type": "put",
+      "bid": 5533.39209785,
+      "ask": 5566.6923512,
+      "mark": 5550.04222452,
+      "implied_vol": 0.305326
+    },
+    {
+      "instrument": "BTC-180D-67620-C",
+      "expiry_years": 0.4931506849315068,
+      "strike": 67620.0,
+      "option_type": "call",
+      "bid": 4811.77577798,
+      "ask": 4840.73330523,
+      "mark": 4826.2545416,
+      "implied_vol": 0.304432
+    },
+    {
+      "instrument": "BTC-180D-67620-P",
+      "expiry_years": 0.4931506849315068,
+      "strike": 67620.0,
+      "option_type": "put",
+      "bid": 6433.85332313,
+      "ask": 6472.5726009,
+      "mark": 6453.21296201,
+      "implied_vol": 0.304432
+    },
+    {
+      "instrument": "BTC-180D-69270-C",
+      "expiry_years": 0.4931506849315068,
+      "strike": 69270.0,
+      "option_type": "call",
+      "bid": 4168.20564536,
+      "ask": 4193.2901327,
+      "mark": 4180.74788903,
+      "implied_vol": 0.30381
+    },
+    {
+      "instrument": "BTC-180D-69270-P",
+      "expiry_years": 0.4931506849315068,
+      "strike": 69270.0,
+      "option_type": "put",
+      "bid": 7411.17461242,
+      "ask": 7455.77546264,
+      "mark": 7433.47503753,
+      "implied_vol": 0.30381
+    },
+    {
+      "instrument": "BTC-180D-72570-C",
+      "expiry_years": 0.4931506849315068,
+      "strike": 72570.0,
+      "option_type": "call",
+      "bid": 3095.13718265,
+      "ask": 3113.76388586,
+      "mark": 3104.45053426,
+      "implied_vol": 0.303298
+    },
+    {
+      "instrument": "BTC-180D-72570-P",
+      "expiry_years": 0.4931506849315068,
+      "strike": 72570.0,
+      "option_type": "put",
+      "bid": 9579.88899353,
+      "ask": 9637.54128436,
+      "mark": 9608.71513895,
+      "implied_vol": 0.303298
+    },
+    {
+      "instrument": "BTC-180D-75860-C",
+      "expiry_years": 0.4931506849315068,
+      "strike": 75860.0,
+      "option_type": "call",
+      "bid": 2275.03774926,
+      "ask": 2288.72904965,
+      "mark": 2281.88339945,
+      "implied_vol": 0.303618
+    },
+    {
+      "instrument": "BTC-180D-75860-P",
+      "expiry_years": 0.4931506849315068,
+      "strike": 75860.0,
+      "option_type": "put",
+      "bid": 11991.74881957,
+      "ask": 12063.91581347,
+      "mark": 12027.83231652,
+      "implied_vol": 0.303618
+    },
+    {
+      "instrument": "BTC-180D-79160-C",
+      "expiry_years": 0.4931506849315068,
+      "strike": 79160.0,
+      "option_type": "call",
+      "bid": 1657.55334268,
+      "ask": 1667.52858847,
+      "mark": 1662.54096557,
+      "implied_vol": 0.304597
+    },
+    {
+      "instrument": "BTC-180D-79160-P",
+      "expiry_years": 0.4931506849315068,
+      "strike": 79160.0,
+      "option_type": "put",
+      "bid": 14616.04725681,
+      "ask": 14704.00742085,
+      "mark": 14660.02733883,
+      "implied_vol": 0.304597
+    },
+    {
+      "instrument": "BTC-180D-82460-C",
+      "expiry_years": 0.4931506849315068,
+      "strike": 82460.0,
+      "option_type": "call",
+      "bid": 1201.56962452,
+      "ask": 1208.8007356,
+      "mark": 1205.18518006,
+      "implied_vol": 0.306075
+    },
+    {
+      "instrument": "BTC-180D-82460-P",
+      "expiry_years": 0.4931506849315068,
+      "strike": 82460.0,
+      "option_type": "put",
+      "bid": 17401.84638247,
+      "ask": 17506.57163653,
+      "mark": 17454.2090095,
+      "implied_vol": 0.306075
+    },
+    {
+      "instrument": "BTC-180D-89060-C",
+      "expiry_years": 0.4931506849315068,
+      "strike": 89060.0,
+      "option_type": "call",
+      "bid": 627.48468451,
+      "ask": 631.26092133,
+      "mark": 629.37280292,
+      "implied_vol": 0.310027
+    },
+    {
+      "instrument": "BTC-180D-89060-P",
+      "expiry_years": 0.4931506849315068,
+      "strike": 89060.0,
+      "option_type": "put",
+      "bid": 23311.3271301,
+      "ask": 23451.61595937,
+      "mark": 23381.47154473,
+      "implied_vol": 0.310027
+    }
+  ]
+}
