@@ -15,6 +15,21 @@ type SurfaceResponse = {
 
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:8000";
 
+// Static demo payloads bundled with the app so the deployed site still
+// renders the surface when no live API is configured.
+async function fetchSurface(underlying: string): Promise<SurfaceResponse> {
+  try {
+    const r = await fetch(`${API_BASE}/v1/surfaces/${underlying}`);
+    if (!r.ok) throw new Error(`API ${r.status}`);
+    return (await r.json()) as SurfaceResponse;
+  } catch (e) {
+    const r = await fetch(`/demo-surface-${underlying}.json`);
+    if (!r.ok) throw e;
+    const data = (await r.json()) as SurfaceResponse;
+    return { ...data, provenance: { ...(data.provenance ?? {}), bundled: true } };
+  }
+}
+
 export default function Home() {
   const [underlying, setUnderlying] = useState("BTC");
   const [surface, setSurface] = useState<SurfaceResponse | null>(null);
@@ -23,13 +38,7 @@ export default function Home() {
   useEffect(() => {
     setSurface(null);
     setError(null);
-    fetch(`${API_BASE}/v1/surfaces/${underlying}`)
-      .then((r) => {
-        if (!r.ok) throw new Error(`API ${r.status}`);
-        return r.json();
-      })
-      .then(setSurface)
-      .catch((e) => setError(String(e)));
+    fetchSurface(underlying).then(setSurface).catch((e) => setError(String(e)));
   }, [underlying]);
 
   const mid = surface ? Math.floor(surface.maturities.length / 2) : 0;
@@ -43,7 +52,11 @@ export default function Home() {
       <header className="flex items-baseline justify-between">
         <h1 className="text-2xl font-semibold">Volterra</h1>
         <p className="text-sm text-slate-400">
-          {surface?.provenance?.source ? `source: ${String(surface.provenance.source)}` : "Neural Volatility Surface Lab"}
+          {surface?.provenance?.bundled
+            ? "source: synthetic-demo (bundled — no live API)"
+            : surface?.provenance?.source
+              ? `source: ${String(surface.provenance.source)}`
+              : "Neural Volatility Surface Lab"}
         </p>
       </header>
 

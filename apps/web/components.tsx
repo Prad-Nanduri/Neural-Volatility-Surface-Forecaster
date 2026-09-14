@@ -28,9 +28,9 @@ export function LineChart({ x, y, title, xTitle, yTitle }: { x: number[]; y: num
 export function ControlRail({ onChange }: { onChange?: (value: string) => void }) {
   const [underlying, setUnderlying] = useState("BTC");
   return <aside className="space-y-4 rounded-xl border p-4">
-    <label className="block text-sm">Underlying<select className="mt-1 w-full rounded border p-2" value={underlying} onChange={e => { setUnderlying(e.target.value); onChange?.(e.target.value); }}><option>BTC</option><option>ETH</option></select></label>
-    <label className="block text-sm">Snapshot<select className="mt-1 w-full rounded border p-2"><option>Latest</option><option>Demo</option></select></label>
-    <label className="block text-sm">View<select className="mt-1 w-full rounded border p-2"><option>IV surface</option><option>Total variance</option></select></label>
+    <label className="block text-sm">Underlying<select className="mt-1 w-full rounded border border-slate-600 bg-slate-800 p-2 text-slate-100" value={underlying} onChange={e => { setUnderlying(e.target.value); onChange?.(e.target.value); }}><option>BTC</option><option>ETH</option></select></label>
+    <label className="block text-sm">Snapshot<select className="mt-1 w-full rounded border border-slate-600 bg-slate-800 p-2 text-slate-100"><option>Latest</option><option>Demo</option></select></label>
+    <label className="block text-sm">View<select className="mt-1 w-full rounded border border-slate-600 bg-slate-800 p-2 text-slate-100"><option>IV surface</option><option>Total variance</option></select></label>
   </aside>;
 }
 
