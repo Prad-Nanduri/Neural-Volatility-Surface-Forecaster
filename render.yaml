@@ -1,0 +1,14 @@
+# Render blueprint: deploys the FastAPI service from its Dockerfile.
+# Build context is the repo root (services/api/Dockerfile copies src/, pyproject.toml,
+# and tests/fixtures/btc_chain_demo.json).
+services:
+  - type: web
+    name: volterra-api
+    runtime: docker
+    dockerfilePath: services/api/Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /v1/health
+    envVars:
+      - key: DEMO_MODE
+        value: "true"

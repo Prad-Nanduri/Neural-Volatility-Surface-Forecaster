@@ -1,0 +1,9 @@
+# Railway: deploy the FastAPI service from its Dockerfile (repo-root build context).
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "services/api/Dockerfile"
+
+[deploy]
+healthcheckPath = "/v1/health"
+healthcheckTimeout = 100
+restartPolicyType = "ON_FAILURE"
