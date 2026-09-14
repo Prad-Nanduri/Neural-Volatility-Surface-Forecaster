@@ -23,10 +23,19 @@ async function fetchSurface(underlying: string): Promise<SurfaceResponse> {
     if (!r.ok) throw new Error(`API ${r.status}`);
     return (await r.json()) as SurfaceResponse;
   } catch (e) {
-    const r = await fetch(`/demo-surface-${underlying}.json`);
+    let r = await fetch(`/demo-surface-${underlying}.json`);
+    let substituted: string | null = null;
+    if (!r.ok && underlying !== "BTC") {
+      // The demo fixture only ships BTC; degrade to it rather than erroring.
+      r = await fetch("/demo-surface-BTC.json");
+      substituted = "BTC";
+    }
     if (!r.ok) throw e;
     const data = (await r.json()) as SurfaceResponse;
-    return { ...data, provenance: { ...(data.provenance ?? {}), bundled: true } };
+    return {
+      ...data,
+      provenance: { ...(data.provenance ?? {}), bundled: true, substituted },
+    };
   }
 }
 
@@ -53,7 +62,7 @@ export default function Home() {
         <h1 className="text-2xl font-semibold">Volterra</h1>
         <p className="text-sm text-slate-400">
           {surface?.provenance?.bundled
-            ? "source: synthetic-demo (bundled — no live API)"
+            ? `source: synthetic-demo (bundled — no live API)${surface.provenance.substituted ? ` — no demo data for ${underlying}, showing ${String(surface.provenance.substituted)}` : ""}`
             : surface?.provenance?.source
               ? `source: ${String(surface.provenance.source)}`
               : "Neural Volatility Surface Lab"}
