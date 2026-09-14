@@ -2,8 +2,5 @@
   "name": "volterra",
   "version": "0.1.0",
   "private": true,
-  "description": "Volterra — Neural Volatility Surface Lab",
-  "workspaces": [
-    "apps/web"
-  ]
+  "description": "Volterra — Neural Volatility Surface Lab"
 }

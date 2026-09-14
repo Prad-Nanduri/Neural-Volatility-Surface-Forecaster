@@ -15,6 +15,7 @@ from __future__ import annotations
 import math
 from collections.abc import Sequence
 from dataclasses import dataclass, field
+from datetime import UTC, datetime
 
 import numpy as np
 
@@ -213,3 +214,56 @@ def assemble_surface(
         rejected=rejected,
         max_residual=max_residual,
     )
+
+
+def _expiry_years(value, now: datetime) -> float:
+    if isinstance(value, (int, float)):
+        return float(value)
+    if isinstance(value, str):
+        value = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    if value.tzinfo is None:
+        value = value.replace(tzinfo=UTC)
+    return (value - now).total_seconds() / (365.0 * 86400.0)
+
+
+def build_surface(
+    quotes: Sequence[dict],
+    moneyness: Sequence[float] | None = None,
+    maturities: Sequence[float] | None = None,
+) -> dict:
+    """Provider-style quote dicts -> JSON-serializable gridded surface."""
+    now = datetime.now(UTC)
+    raw = [
+        RawQuote(
+            strike=float(q["strike"]),
+            expiry_years=_expiry_years(q.get("expiry") or q["expiry_years"], now),
+            option_type=q["option_type"],
+            bid=q.get("bid"),
+            ask=q.get("ask"),
+            spot=float(q["underlying_price"] if "underlying_price" in q else q["spot"]),
+            rate=float(q.get("interest_rate", q.get("rate", 0.0))),
+            dividend_yield=float(q.get("dividend_yield", 0.0)),
+        )
+        for q in quotes
+    ]
+    kwargs = {}
+    if moneyness is not None:
+        kwargs["moneyness_grid"] = np.asarray(moneyness, dtype=float)
+    if maturities is not None:
+        kwargs["maturity_grid"] = np.asarray(maturities, dtype=float)
+    r = assemble_surface(raw, **kwargs)
+    return {
+        "coordinate_system": "log_forward_moneyness_total_variance",
+        "moneyness": r.moneyness.tolist(),
+        "maturities": r.maturities.tolist(),
+        "iv": r.implied_vol.tolist(),
+        "total_variance": r.total_variance.tolist(),
+        "diagnostics": r.diagnostics,
+        "coverage": {
+            "n_quotes": r.n_quotes,
+            "n_accepted": r.n_accepted,
+            "n_rejected": len(r.rejected),
+            "rejected": r.rejected[:50],
+            "max_residual": r.max_residual,
+        },
+    }

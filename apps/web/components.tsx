@@ -11,7 +11,7 @@ type SurfaceProps = { x: number[]; y: number[]; z: number[][]; title?: string };
 export function SurfacePlot({ x, y, z, title = "Implied volatility" }: SurfaceProps) {
   const data: Data[] = [{ type: "surface", x, y, z, colorscale: "Viridis",
     hovertemplate: "k=%{x:.3f}<br>T=%{y:.3f}<br>IV=%{z:.2%}<extra></extra>",
-    colorbar: { title: "IV" } }];
+    colorbar: { title: { text: "IV" } } }];
   const layout: Partial<Layout> = { title, autosize: true, margin: { l: 0, r: 0, t: 42, b: 0 },
     paper_bgcolor: "transparent", plot_bgcolor: "transparent",
     scene: { xaxis: { title: "Log-forward moneyness" }, yaxis: { title: "Maturity" },
@@ -38,7 +38,7 @@ export function DiagnosticsPanel({ diagnostics }: { diagnostics: Record<string, 
   return <section className="rounded-xl border p-4"><h2 className="mb-3 text-lg font-semibold">Diagnostics</h2><dl className="grid grid-cols-2 gap-3 text-sm">{Object.entries(diagnostics).map(([key, value]) => <div key={key}><dt className="text-slate-500">{key}</dt><dd>{String(value)}</dd></div>)}</dl></section>;
 }
 
-export function Mobile2DFallback({ k, maturities, iv }: SurfaceProps) {
-  const row = iv[Math.floor(iv.length / 2)] ?? [];
-  return <div className="block sm:hidden"><LineChart x={k} y={row} title="2D skew (mobile view)" xTitle="Log-moneyness" yTitle="IV" /></div>;
+export function Mobile2DFallback({ x, z }: SurfaceProps) {
+  const row = z[Math.floor(z.length / 2)] ?? [];
+  return <div className="block sm:hidden"><LineChart x={x} y={row} title="2D skew (mobile view)" xTitle="Log-moneyness" yTitle="IV" /></div>;
 }
